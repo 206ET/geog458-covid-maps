@@ -73,5 +73,3 @@ Both maps were built using **Mapbox GL JS** and are published using **GitHub Pag
 - **GitHub Pages**
 
 ---
-
-## File Structure
