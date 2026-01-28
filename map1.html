@@ -5,11 +5,30 @@
   <title>COVID-19 Rates (Map 1)</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
   <div id="map"></div>
+
+  <div id="info" class="panel">
+    <h1>COVID-19 Case Rates (2020)</h1>
+    <p>
+      Choropleth map showing county-level COVID-19 case rates in 2020 (cases per 1,000 residents).
+      Click a county to see details.
+    </p>
+    <p><b>Projection:</b> Albers (US-focused)</p>
+    <p><b>Data:</b> New York Times (cases) + ACS 2018 5-year (population)</p>
+    <p><b>Author:</b> 206ET</p>
+  </div>
+
+  <div id="legend" class="panel">
+    <h3>Legend (Cases per 1,000)</h3>
+    <div id="legend-rows"></div>
+    <p style="margin:8px 0 0 0; font-size:11px; color:#444;">
+      Lighter = lower rate, darker = higher rate
+    </p>
+  </div>
 
   <script src="https://api.mapbox.com/mapbox-gl-js/v2.15.0/mapbox-gl.js"></script>
   <script src="js/map1.js"></script>
